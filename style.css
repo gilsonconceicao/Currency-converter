@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.conteiner {
+    display: block;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+main {
+    background-color: #eeeeee;
+    padding: 10px 20px;
+}
+
+.itensMain {
+    display: block;
+    margin: auto;
+}
+
+header {
+    background-color: #22BABB;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+label {
+    font-size: 15px;
+}
+
+select {
+    background-color: #fff;
+    border: none;
+    box-shadow: 7px 7px 7px #0000001c;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#add-value {
+    outline: none;
+    display: block;
+    width: 94%;
+    padding: 10px;
+}
+
+#converter-value {
+    background-color: #F24405;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 7px 7px 7px #0000001c;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.area-response {
+    display: block;
+    text-align: center;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.setaBottom {
+    color: #c7c7c6;
+    display: block;
+    font-size: 79px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .conteiner {    
+        margin: 0 auto;
+    }
+}
