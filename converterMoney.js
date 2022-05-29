@@ -7,8 +7,6 @@ const euro = 5.08
 
 
 const converterMoney = () => {
-    
-
     const addValue = document.getElementById('add-value').value
     if (addValue == '' || addValue == 0) {
         alert('Adicione um valor válido!')
@@ -16,7 +14,6 @@ const converterMoney = () => {
         changesCurrency()
         document.querySelector('.area-response').style.display = 'flex'
     }
-
     
 }
 
