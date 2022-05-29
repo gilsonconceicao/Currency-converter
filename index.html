@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converter Money</title>
 </head>
+
 <body>
     <div class="conteiner">
         <header>
-            <h1>Converter Money</h1>
+            <h1>CodeClub Converter Money</h1>
         </header>
 
-<main>
-<div class="itensMain">
-<label>
-    Converter de <br>
-    <select>
-        <option>R$ Real brasileiro</option>
-    </select>
-</label>
-<br>
-<label>
-    Converter para <br>
-    <select id="changes-currency">
-        <option value="Dolar">U$$ Dólar Americano</option>
-        <option value="Euro">€ Euro</option>
-    </select>
-</label>
-<br>
-<label>
-    Valor <br>
-    <input type="text" id="add-value" placeholder="R$ 10.000,00">
-</label><br>
-<button id="converter-value">Converter</button> <br>
-<br> 
-<label class="area-response">
-    <img src="assets/brasil.png" alt="bandeira-brasil.png">
-    <p>Real</p>
-    <h3 id="currencyBRL">R$ 10.000,00</h4>
-    <span class="setaBottom">&#8595;</span>
-    <img class="image-change" src="assets/estados-unidos.png" alt="estados-unidos.png">
-    <p class="changeNameCurrency">Dólar</p>
-    <h4 id="currency-transform">U$$ 2,113.72</h4>
-</label>
-</div>
-</main>
+        <main>
+            <div class="itensMain">
+                <label>
+                    Converter de <br>
+                    <select>
+                        <option>R$ Real brasileiro</option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    Converter para <br>
+                    <div class="myoptions">
+                        <select id="changes-currency">
+                            <option value="Dolar">U$$ Dólar Americano</option>
+                            <option value="Euro">€ Euro</option>
+                        </select>
+                    </div>
+                </label>
+                <br>
+                <label>
+                    Valor <br>
+                    <input type="text" required id="add-value" placeholder="R$ 10.000,00">
+                </label><br>
+                <button id="converter-value">Converter</button> <br>
+                <br>
+                <label class="area-response"> 
+                    <span>
+                        <img src="assets/brasil.png" alt="bandeira-brasil.png">
+                        <p>Real </p> <br> 
+                        <h3 id="currencyBRL"></h3> 
+                    </span>
+                    <span class="seta">	&#10141;</span>
+                    <span>
+                        <img class="image-change" src="assets/estados-unidos.png" alt="estados-unidos.png">
+                        <p class="changeNameCurrency">Dólar </p> <br> 
+                        <h3 id="currency-transform"></h3>
+                    </span>
+                </label>
+            </div>
+        </main>
 
     </div>
 </body>
 <script src="converterMoney.js"></script>
+
 </html>
